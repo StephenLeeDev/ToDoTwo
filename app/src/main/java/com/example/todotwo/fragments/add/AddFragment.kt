@@ -9,26 +9,13 @@ import com.example.todotwo.R
 
 class AddFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-        }
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_add, container, false)
-    }
 
-    companion object {
+        val view = inflater.inflate(R.layout.fragment_add, container, false)
 
-        fun newInstance(param1: String, param2: String) =
-            AddFragment().apply {
-                arguments = Bundle().apply {
-
-                }
-            }
+        return view
     }
 }
